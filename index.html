@@ -4,14 +4,50 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Kabupaten Semarang</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9f5;
+        }
+
+        .navbar,
+        .card-header,
+        .alert-primary {
+            background-color: #4B5320 !important;
+            color: #fff !important;
+        }
+
+        .navbar .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar .nav-link.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .btn,
+        .alert-primary {
+            border-color: #4B5320;
+        }
+
+        a {
+            color: #4B5320;
+        }
+
+        a:hover {
+            color: #2f3515;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Semarang</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,80 +61,84 @@
                         <a class="nav-link active" aria-current="page" href="#Deskripsi">Deskripsi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Penduduk">Jumlah Penduduk</a>
+                        <a class="nav-link" href="#Penduduk">Data Penduduk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Kecamatan">Kecamatan</a>
+                        <a class="nav-link" href="#Kecamatan">Data Kecamatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Link">Link</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
     <main class="container mt-3">
-        <!-- tittle -->
-        <div class="alert alert-primary" role="alert">
-            <h1> Hai Semarang!</h1>
-            <h5> Jawa Tengah</h5>
+
+        <!-- Title -->
+        <div class="alert alert-primary text-center" role="alert">
+            <h1>SELAMAT DATANG DI KABUPATEN SEMARANG</h1>
+            <h5>Bumi Serasi - Sehat, Rapi, Aman, Sejahtera, Indah</h5>
+            <h5>Jawa Tengah</h5>
         </div>
 
-        <!-- description -->
-        <div class="card mt-3">
-            <div class=" card-header">
-                Decription
-            </div>
+        <!-- Description -->
+        <div class="card mt-3" id="Deskripsi">
+            <div class="card-header">Deskripsi Wilayah</div>
             <div class="card-body">
-                <p class="card-text">Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄
-                    translit. Semarang) adalah sebuah wilayah kabupaten yang terletak di Provinsi Jawa Tengah,
-                    Indonesia. Ibu kotanya adalah Ungaran. Kabupaten ini berbatasan dengan Kota Semarang di utara;
-                    Kabupaten Demak dan Kabupaten Grobogan di timur; Kabupaten Boyolali di timur dan selatan; serta
-                    Kabupaten Magelang, Kabupaten Temanggung, dan Kabupaten Kendal di barat. Kota Salatiga adalah
-                    enklave dari Kabupaten Semarang. Jumlah penduduk Kabupaten Semarang di tahun 2021 sebanyak 1.089.767
-                    jiwa, dengan Slogan kabupaten ini adalah sebagai Bumi Serasi yang merupakan akronim dari "Sehat,
-                    Rapi, Aman, Sejahtera, dan Indah".</p>
+                <p class="card-text">
+                    Kabupaten Semarang (bahasa Jawa: Hanacaraka: ꦱꦼꦩꦫꦁ, Pegon: سيماراڠ, Hanzi: 三宝垄 translit. Semarang)
+                    adalah sebuah wilayah kabupaten yang terletak di Provinsi Jawa Tengah, Indonesia. Ibu kotanya adalah
+                    Ungaran.
+                    Kabupaten ini berbatasan dengan Kota Semarang di utara; Kabupaten Demak dan Kabupaten Grobogan di
+                    timur;
+                    Kabupaten Boyolali di timur dan selatan; serta Kabupaten Magelang, Kabupaten Temanggung, dan
+                    Kabupaten Kendal
+                    di barat. Kota Salatiga adalah enklave dari Kabupaten Semarang. Jumlah penduduk Kabupaten Semarang
+                    di tahun
+                    2021 sebanyak 1.089.767 jiwa. Slogan kabupaten ini adalah "Bumi Serasi" yang merupakan akronim dari
+                    "Sehat, Rapi, Aman, Sejahtera, dan Indah".
+                </p>
             </div>
         </div>
 
-        <!-- population -->
-        <div class="card mt-3">
-            <div class="card-header">
-                Penduduk
-            </div>
+        <!-- Population -->
+        <div class="card mt-3" id="Penduduk">
+            <div class="card-header">Data Penduduk</div>
             <div class="card-body">
                 <table class="table table-striped table-bordered">
-                    <tr>
-                        <th>No</th>
-                        <th>Gender</th>
-                        <th>Jumlah</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>laki-laki</td>
-                        <td>542.392 jiwa</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Perempuan</td>
-                        <td>547.375 jiwa</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Total</td>
-                        <td>1.089.767 jiwa</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Gender</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Laki-laki</td>
+                            <td>542.392 jiwa</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Perempuan</td>
+                            <td>547.375 jiwa</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Total</td>
+                            <td>1.089.767 jiwa</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- regency -->
-        <div class="card mt-3">
-            <div class="card-header">
-                Kecamatan
-            </div>
+        <!-- Districts -->
+        <div class="card mt-3" id="Kecamatan">
+            <div class="card-header">Data Kecamatan</div>
             <div class="card-body">
                 <ol>
                     <li>Getasan</li>
@@ -124,48 +164,105 @@
             </div>
         </div>
 
-
-        <!-- website -->
+        <!-- Official Website -->
         <div class="card mt-3">
-            <div class="card-header">
-                Website
-            </div>
+            <div class="card-header">Website Kami</div>
             <div class="card-body">
                 <a href="https://www.semarangkab.go.id/landing/" target="_blank" rel="noopener noreferrer"
                     title="Click to open website!">
-                    Website Portal Pemkab Semarang
+                    🌐 Website Portal Pemkab Semarang
                 </a>
             </div>
         </div>
 
-        <!-- image -->
+        <!-- Gallery -->
         <div class="card mt-3">
-            <div class="card-header">
-                Gambar
-            </div>
-            <div class="card-body"></div>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOFehNy4MzQAlhPGTZjKs-454QR16sGsIZqbQRdLiZQrcrRbDwrUOwqWElhzgoaZRMlZKc4OXMOLFmCLDzQjycTlaAQ521ihg-dOr5D5M1TB5h9sQDLkEAJWylylr5EcMKe3w1Vwezb5oh167MxhXdgDRxAPKy3MWhoqE29M84Qf_r3sc51zQq-v5Pg/s1024/Slide1.JPG"
-                width="500" height="333" alt="Pemandangan Kabupaten Semarang Jawa Tengah">
-        </div>
-
-        <!-- video -->
-        <div class="card mt-3">
-            <div class="card-header">
-                Video Kilas
-            </div>
+            <div class="card-header">Gallery & Dokumentasi</div>
             <div class="card-body">
-                <!-- bungkus iframe dengan ratio biar responsif -->
-                <div class="ratio ratio-16x9">
-                    <iframe width="560" height="200" src="https://www.youtube.com/embed/gJMCSEY_D3M?si=I8WB2I07HPAL7yKG"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxOFehNy4MzQAlhPGTZjKs-454QR16sGsIZqbQRdLiZQrcrRbDwrUOwqWElhzgoaZRMlZKc4OXMOLFmCLDzQjycTlaAQ521ihg-dOr5D5M1TB5h9sQDLkEAJWylylr5EcMKe3w1Vwezb5oh167MxhXdgDRxAPKy3MWhoqE29M84Qf_r3sc51zQq-v5Pg/s1024/Slide1.JPG"
+                    width="500" height="333" alt="Pemandangan Kabupaten Semarang, Jawa Tengah"
+                    class="img-fluid rounded">
+                <div class="ratio ratio-16x9 mt-3">
+                    <iframe src="https://www.youtube.com/embed/gJMCSEY_D3M?si=I8WB2I07HPAL7yKG"
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
+        <!-- Maps -->
+        <div class="card mt-3">
+            <div class="card-header">Peta Kabupaten Semarang</div>
+            <div class="card-body">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63323.25146513868!2d110.3523167!3d-7.18357395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa23b81d1%3A0xfcae8fcb8dbe2ef9!2sKabupaten%20Semarang!5e0!3m2!1sid!2sid!4v1699999999999!5m2!1sid!2sid"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links, Social Media & Contact -->
+        <section class="mt-4" id="Link">
+            <div class="row g-3">
+                <!-- Links -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">Link & Sumber Resmi</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://www.semarangkab.go.id/landing/" target="_blank">🌐 Website Pemkab
+                                        Semarang</a></li>
+                                <li><a href="https://semarangkab.bps.go.id" target="_blank">📊 Data Statistik (BPS)</a>
+                                </li>
+                                <li><a href="#" target="_blank">🎯 Portal Pariwisata</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">Media Sosial</div>
+                        <div class="card-body d-flex flex-column gap-2">
+                            <a class="btn btn-outline-success" href="https://www.instagram.com/" target="_blank">📷
+                                Instagram</a>
+                            <a class="btn btn-outline-success" href="https://www.youtube.com/" target="_blank">▶️
+                                YouTube</a>
+                            <a class="btn btn-outline-success" href="https://twitter.com/" target="_blank">🐦 Twitter /
+                                X</a>
+                            <a class="btn btn-outline-success" href="https://www.facebook.com/" target="_blank">📘
+                                Facebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">Kontak Resmi</div>
+                        <div class="card-body row">
+                            <div class="col-md-6">
+                                <h6>Alamat Kantor</h6>
+                                <address>
+                                    Kantor Bupati Kabupaten Semarang <br>
+                                    Jl. Pemuda No.123, Ungaran, Kab. Semarang <br>
+                                    Jawa Tengah, Indonesia
+                                </address>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Telepon & Email</h6>
+                                <p>Telepon: <a href="tel:+62241234567">+62 24 1234 567</a></p>
+                                <p>Email: <a href="mailto:info@semarangkab.go.id">info@semarangkab.go.id</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
